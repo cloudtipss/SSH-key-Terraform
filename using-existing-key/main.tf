@@ -51,6 +51,7 @@ resource "aws_security_group" "ssh" {
   }
 }
 
+### SSH Key 
 resource "aws_key_pair" "public_key" {
   key_name   = var.ssh_key_name
   public_key = "${file("ec2-manual-key.pub")}"

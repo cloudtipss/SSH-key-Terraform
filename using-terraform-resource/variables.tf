@@ -61,7 +61,7 @@ variable "private_key_name" {
 variable "path" {
   description = "Full path to you ssh folder or other folder to save private key"
   type        = string
-  default     = "/Users/mykhailozhuravel/.ssh"
+  default     = "ssh"
 }
 
 variable "ec2_name" {
